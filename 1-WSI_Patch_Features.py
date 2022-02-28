@@ -46,13 +46,13 @@ def main():
 		List_Xcor=[]
 		List_Ycor=[]
 
-		random_X=floor(increment_x/60)
-		random_Y=floor(increment_y/60)
+		#random_X=floor(increment_x/60)
+		#random_Y=floor(increment_y/60)
 
 		feature_List=[]
 
-		for incre_x in range(random_X, increment_x, random_X):  # read the image in patches
-			for incre_y in range(random_Y, increment_y, random_Y):
+		for incre_x in range(increment_x):  # read the image in patches
+			for incre_y in range(increment_y):
 				begin_x = window_size * incre_x
 				end_x = min(width, begin_x + window_size)
 				begin_y = window_size * incre_y
