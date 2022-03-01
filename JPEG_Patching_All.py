@@ -8,10 +8,7 @@ import glob
 import pandas as pd
 
 
-
-import Code_from_deepslide
-
-import Purple_Threshold
+import 0_Purple_Threshold
 
 #def output_jpeg_tiles(image_name, output_path):
 
@@ -63,10 +60,9 @@ for image in images:
 				os.makedirs(output_subfolder)
 			output_image_name = os.path.join(output_subfolder,image_name+ '_' + str(incre_x) + '_' + str(incre_y) + '.jpg')
 			print(output_image_name)
-			#if Code_from_deepslide.is_purple(patch_rgb):
-				#print("is purple")
+			
 			patch_rgb.save(output_image_name, 'jpeg')
-			num_purple, purple_thresh = Purple_Threshold.is_purple(patch_rgb)
+			num_purple, purple_thresh = 0_Purple_Threshold.is_purple(patch_rgb)
 			
 			List_Purple.append(num_purple)
 			List_Xcor.append(incre_x)
