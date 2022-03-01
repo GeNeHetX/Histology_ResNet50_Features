@@ -9,9 +9,9 @@ import pandas as pd
 
 from warnings import simplefilter
 
-from Purple_Threshold import is_purple
+from 0_Purple_Threshold import is_purple
 
-from Features import Calc_Features
+from 0_Features import Calc_Features
 
 from tensorflow.keras.applications.resnet50 import ResNet50
 
